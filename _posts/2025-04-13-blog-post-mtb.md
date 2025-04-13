@@ -7,8 +7,7 @@ tags:
   - clinical research
   - database system
 ---
-# Developing a Database Application for Molecular Cancer Research
-
+        
 *March 2020 - May 2021*
 
 During my time as a student assistant at the Institute of Medical Bioinformatics and System Biology (IBSM) at the University Clinic Freiburg, I had the opportunity to work on a project with real-world impact in the field of cancer research. Our team was tasked with developing a comprehensive database solution for the Molecular Tumor Board, which would store and organize crucial data for personalized cancer treatments.
