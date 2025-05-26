@@ -15,7 +15,7 @@ tags:
 *Exploring the linguistic patterns hidden in the royal game through machine learning*
 
 
-## Introduction
+## Introduction   
 
 What if chess moves could be treated as words in a sentence? What stories might emerge from the strategic dance between kings and pawns? These were the questions that drove our team of four through an exciting Natural Language Processing project at Politecnico di Milano, under the guidance of Professor Mark Carman.
 
@@ -108,9 +108,13 @@ Most importantly, this project reminded me that in machine learning, as in chess
 ## Technical Details
 
 For those interested in replicating or extending this work:
-- **Dataset**: Stockfish self-play games in UCI format found on [hugging-face](https://huggingface.co/datasets/laion/strategic_game_chess/viewer/default/train?views%5B%5D=train)
+- **Dataset**: Stockfish self-play games in UCI format found on [hugging-face](https://huggingface.co/datasets/laion/strategic_game_chess     )
 - **Primary Architecture**: Single-layer LSTM with embedding layers
 - **Evaluation Metrics**: Prediction accuracy for various chess-specific tasks
 - **Implementation**: Python with PyTorch for deep learning components
 
 The code and detailed results are available [GitHub](https://github.com/NLP-Project-PoliMi-2025/NLP-Project/).
+
+
+----- 
+I have  written this blog post jointly with Claude.ai and in the retrospective as I setup my webpage in mid-early 2025.
