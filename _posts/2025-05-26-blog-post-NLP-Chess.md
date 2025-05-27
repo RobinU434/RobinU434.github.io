@@ -46,10 +46,9 @@ How much strategic information can we extract from move sequences compared to th
 
 Looking for instance at game 20 int the test dataset we get inference for piece prediction and outcome prediction: 
 ![Moved piece prediction](https://robinu434.github.io/files/blog-post-figures/2025-05-26-NLP-Chess-piece-prediction "Moved piece prediction")
-![Game outcome prediction](https://robinu434.github.io/files/blog-post-figures/2025-05-26-NLP-Chess-outcome-prediction.png "Game outcome prediction")
+![Game outcome prediction](https://robinu434.github.io/files/blog-post-figures/2025-05-26-NLP-Chess-outcome-    .png "Game outcome prediction")
 
 
-        
 We also looked into the game embeddings (last hidden state) and see if the hidden state also learns features which could be also used to predict other labels like the reason for termination (checkmate, stalemate, insufficient material, ...)
 
 ![Chess-Bot demonstration](https://robinu434.github.io/files/blog-post-figures/2025-05-26-NLP-Chess-embedding-UMAP.png "Chess-Bot demonstration")
@@ -111,6 +110,8 @@ Given unlimited time, several directions beckoned:
 
 **Temporal Dynamics**: How do model predictions change as games progress from opening through middlegame to endgame?
 
+**Account for Uncertainty**: For game prediction of next token, game outcome, ... how could we effectively make use of Bayesian-Neural-Networks to account for uncertainty for a time series prediction?      
+
 ## Conclusions and Reflections
 
 This project demonstrated that chess notation does indeed exhibit linguistic properties that can be leveraged by NLP techniques. The success of our Word2Vec embeddings and sequence prediction models suggests that chess moves follow distributional patterns similar to words in natural language.
@@ -131,7 +132,14 @@ For those interested in replicating or extending this work:
 - **Evaluation Metrics**: Prediction accuracy for various chess-specific tasks
 - **Implementation**: Python with PyTorch for deep learning components
 
-The code and detailed results are available [GitHub](https://github.com/NLP-Project-PoliMi-2025/NLP-Project/).
+The code and detailed results are available [GitHub](https://github.com/NLP-Project-PoliMi-2025/NLP-Project/). The notebooks with waaaaaaay more (but not less interesting) material and findings can be found [here](https://github.com/NLP-Project-PoliMi-2025/NLP-Project/tree/main/notebooks)
+
+
+## Acknowledgements
+
+At the end of this report I would like to thank my teammates, [Martina Missana](https://github.com/martinamissana), [Paolo Ginefra](https://github.com/PaoloGinefra) and [Ferdinando Onori](https://github.com/FerdinandoOnori), for the great experience during this project. Despite the huge workload we all experienced in this short amount of time we managed to deliver, at least from my point of view, a nice exploratorive study on this dataset. 
+
+Please don't be mad at me when I only covered a veeeery small portion of the work we have done in this blog post. 
 
 
 ----- 
