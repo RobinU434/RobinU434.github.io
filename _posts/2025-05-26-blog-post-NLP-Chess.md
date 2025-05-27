@@ -45,9 +45,7 @@ How much strategic information can we extract from move sequences compared to th
 - Game outcomes
 
 Looking for instance at game 20 int the test dataset we get inference for piece prediction and outcome prediction: 
-![Moved piece prediction](https://robinu434.github.io/files/blog-post-figures/2025-05-26-NLP-Chess-piece-prediction "Moved piece prediction")
-![Game outcome prediction](https://robinu434.github.io/files/blog-post-figures/2025-05-26-NLP-Chess-outcome-    .png "Game outcome prediction")
-
+![LSTM inference](https://robinu434.github.io/files/blog-post-figures/2025-05-26-NLP-Chess-lstm-inference.png  "LSTM inference")    
 
 We also looked into the game embeddings (last hidden state) and see if the hidden state also learns features which could be also used to predict other labels like the reason for termination (checkmate, stalemate, insufficient material, ...)
 
