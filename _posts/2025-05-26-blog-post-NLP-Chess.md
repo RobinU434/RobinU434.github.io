@@ -12,7 +12,7 @@ tags:
 
 ---
 
-![NLP Project Logo](../files  /blog-post-figures/2025-05-26-NLP-Chess-logo.png "NLP Project Logo")
+![NLP Project Logo](https://robinu434.github.io/files/blog-post-figures/2025-05-26-NLP-Chess-logo.png "NLP Project Logo")
 
 *Exploring the linguistic patterns hidden in the royal game through machine learning*
 
@@ -41,12 +41,12 @@ How much strategic information can we extract from move sequences compared to th
 
 - Piece captures  
 - Piece movements and positioning
-- Check situations
+- Check situations  
 - Game outcomes
 
 We also looked into the game embeddings (last hidden state) and see if the hidden state also learns features which could be also used to predict other labels like the reason for termination (checkmate, stalemate, insufficient material, ...)
 
-![Chess-Bot demonstration](../files /blog-post-figures/2025-05-26-NLP-Chess-embedding-UMAP.png "Chess-Bot demonstration")
+![Chess-Bot demonstration](https://robinu434.github.io/files/blog-post-figures/2025-05-26-NLP-Chess-embedding-UMAP.png "Chess-Bot demonstration")
 
 
 
@@ -65,7 +65,7 @@ To make the bot's decision-making transparent, we implemented several interpreta
 
 Watching this bot play was like observing someone who had learned chess by reading 70.000 games without ever seeing a board – sometimes brilliant, sometimes baffling, but always following patterns it had learned from the data. By playing with the bot we found the bot is lacking robustness in a sense that if you play not optimal (and move the move sequence out of distribution) then the bot is also not playing optimal because the bot has not seen a move sequence like this before and does not know what to predict in those cases.
 
-![Chess-Bot demonstration](../files /blog-post-figures/2025-05-26-NLP-Chess-Bot.jpg "Chess-Bot demonstration")
+![Chess-Bot demonstration](https://robinu434.github.io/files/blog-post-figures/2025-05-26-NLP-Chess-Bot.jpg "Chess-Bot demonstration")
 
 
 ## My Deep Dive: Sequence Prediction Architectures
