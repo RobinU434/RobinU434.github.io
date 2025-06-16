@@ -1,5 +1,16 @@
-# Robots in on Farm: My Journey at the Field Robot Event 2025
+---
+title: "Robots in on Farm: My Journey at the Field Robot Event 2025"
+date: 2025-06-12
+permalink: /posts/2025/06/FRE
+tags:
+  - Field Robot Event
+  - Robotics
+  - Computer Vision
+  - University Project
+---
+*April 2025 - June 2025*
 
+---
 The Field Robot Event is more than just a competition—it's a crucible where academic theory meets the reality of autonomous systems in the field. This year, our 9-member team from Politecnico di Milano took on the challenge of adapting, programming (and soon repairing) our agricultural robot to master four challenging tasks, competing against 14 other teams from across Europe.
 
 
@@ -85,9 +96,9 @@ Would I do it again? Absolutely. Would I approach it differently? Definitely. Bu
 
 For anyone considering similar competitions or robotics projects, my advice is simple: embrace the chaos, prioritize robustness over elegance, and remember that the most valuable learning often happens when things don't go according to plan.
 
-*Special thanks to our supervisors Simone Mentasti, Mirko Usuelli, and professor Matteo Matteucci for their guidance, and to my teammates: Angela Remolina​, Alessio Spineto​, Erdal Yalçın​, Alisa Pesot               skaia​, Luis Caballero​, Lorenzo Arcangeli​, Filippo Di Fiore​ (and Paolo Ginefra, who participated in the last years edition of FRE and helped out especially during difficult time) for making this challenging journey memorable despite the occasional 3 AM debugging session.*
+*Special thanks to our supervisors Simone Mentasti, Mirko Usuelli, and professor Matteo Matteucci for their guidance, and to my teammates: Angela Remolina​, Alessio Spineto​, Erdal Yalçın​, Alisa Pesotskaia​, Luis Caballero​, Lorenzo Arcangeli​, Filippo Di Fiore​ (and Paolo Ginefra, who participated in the last years edition of FRE and helped out especially during difficult time) for making this challenging journey memorable despite the occasional 3 AM debugging session.*
 
-![FRE-team](https://robinu434.github.io/files/blog-post-figures/2025-06-12-FRE-team.jpg "FRE 2025 team Politecnico di Milano")
+![FRE-team](https://robinu434.github.io/files/blog-post-figures/2025-06-12-FRE-team.png "FRE 2025 team Politecnico di Milano")
 
 
 
