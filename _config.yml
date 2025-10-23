@@ -22,10 +22,10 @@ repository               : "robinu434.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "IMG_0566_square.JPG"
   name             : "Robin Uhrich"
   pronouns         : # example: "she/her"  
-  bio              : "Machine Learning Master student at the University of Tübingen, passionate about Reinforcement Learning and Probabilistic Machine Learning. Squint hard enough and everything becomes a probability distribution. ;)"
+  bio              : "Machine Learning Master student at the University of Tübingen, passionate about Reinforcement Learning and Bayesian/Probabilistic Learning. Following the dogma: squint hard enough and everything becomes a probability distribution. ;)"
   location         : "Tübingen"
   employer         : "University of Tübingen"
   uri              : # URL
