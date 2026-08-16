@@ -7,53 +7,57 @@ redirect_from:
   - /about.html
 ---
 
-Machine Learning Researcher | Robotics Engineer | Probabilistic Methods
+I am a Machine Learning master's student at the University of Tübingen, writing my thesis in the Autonomous Learning Group of Prof. Georg Martius. Before Tübingen I studied computer science in Freiburg, and I spent the first half of 2025 on an Erasmus exchange at Politecnico di Milano.
 
-## About Me
+Most of what I have worked on sits somewhere between reinforcement learning, probabilistic modelling, and robotics. I started on the applied side, classifying road damage from laser scans at Fraunhofer IPM, building a database for molecular cancer research at the University Clinic Freiburg, and moved toward reinforcement learning through my bachelor thesis on latent action spaces and a quadrupedal locomotion project applied to the Unitree A1. That mix has stuck: I like problems where a principled probabilistic idea stays in contact with the problem of decision making.
 
-I'm a Machine Learning graduate student at the University of Tübingen, currently conducting research at the intersection of reinforcement learning and Bayesian inference. My work focuses on developing principled methods that bridge probabilistic reasoning with sequential decision-making.
+## Research interests
 
-Currently pursuing my Master's in Machine Learning with an Erasmus exchange at Politecnico di Milano, I explore how probabilistic frameworks can enhance reinforcement learning algorithms and how RL methods can improve Bayesian inference procedures. My research is grounded in rigorous theoretical foundations while maintaining a strong emphasis on practical implementations in real-world systems.
+I am interested in generative modelling for sequential decision making, currently in two directions.
 
-## Current Research Projects
+**Single-step samplers for action spaces.** Most policies still model actions as a diagonal Gaussian. I am looking at what changes when the action distribution comes from a more general single-step generative sampler instead (Drifting, Terminal-Velocity-Matching, ...), and what that buys an online RL algorithm.
 
-- **SPARK**: Augmenting stochastic policies with non-diagonal Gaussian distributions for more expressive action sampling in continuous control
-- **Generalized Simulation Based Inference**: Extending GBI-ACE with guided diffusion models for improved posterior approximation
-- **Humanoid VLA Models**: Applying Vision-Language-Action models to humanoid robotics with probabilistic policy frameworks
-- **Distributed Multi-Agent RL**: Developing asynchronous learning methods for optimal transport problems in train scheduling
+**Meta-RL from offline data.** Given a fixed dataset and only little knowledge of the downstream task, how much can be learned in advance? Behavior foundation models are what interest me most here. What they actually internalise from offline data, how behavior ends up represented, and how far zero-shot RL can push that: extracting as much as possible from a dataset with respect to any task that might arrive later. Part of the appeal is practical, since probabilistic models that are cheap to sample from and differentiable end to end open up offline and model-based methods that would otherwise be out of reach.
 
-## Technical Background
+My thesis sits between the two, on occupancy modelling and generative models for offline meta-RL, supervised by Marco Bagatella, Dr. Núria Armengol Urpí and Dr. Pavel Kolev.
 
-My research leverages a comprehensive technical foundation:
+## Research experience
 
-- **Probabilistic Methods**: Bayesian inference, variational inference, generative models (VAEs, diffusion models), Gaussian processes
-- **Reinforcement Learning**: Policy gradient methods (SAC, PPO), model-based RL, multi-agent systems, exploration strategies
-- **Robotics**: Vision-guided control, imitation learning, manipulation, quadrupedal and humanoid locomotion
-- **Tools & Frameworks**: PyTorch/Lightning, Gymnasium, Stable-Baselines3, ROS2, probabilistic programming
+**Autonomous Learning Group, University of Tübingen** (2025–2026)  
+Finetuned Vision-Language-Action models for humanoid robots under Prof. Georg Martius and Prof. Wieland Brendel — collecting demonstration data and studying how action representations affect generalisation in behavior cloning.
 
-## Selected Experience
+**Politecnico di Milano, lab of Prof. Marcello Restelli** (2025)  
+Reframed the Flatland3 rail environment around switches rather than trains, for asynchronous multi-agent RL on train scheduling.
 
-**Research Assistant** - Autonomous Learning Group, University of Tübingen  
-Working on Vision-Language-Action models for humanoid robotics under Prof. Georg Martius
+**BG Clinic Tübingen** (2024–2025)  
+Built a deep learning pipeline estimating hand kinematics from EMG signals, designed to be usable by researchers outside computer science.
 
-**Research Intern** - Fraunhofer Italia  
-Developed vision-guided imitation learning pipeline combining Task-Parameterized Gaussian Mixture Models with trajectory optimization
+**Fraunhofer Italia, Advanced Robotics** (2023)  
+Vision-guided imitation learning for a modular robot manipulator, re-implementing task-parameterized Gaussian mixture models and handling multi-camera trajectory recording.
 
-**Bachelor Thesis** - IMBIT Lab, University of Freiburg  
-*Expanding Action Space in Reinforcement Learning through Latent Models*: Integrated Soft Actor-Critic with variational autoencoders for enhanced policy learning
+**Neurorobotics Group, University of Freiburg** (2022–2023)  
+Bachelor thesis combining Soft Actor-Critic with variational autoencoders to expand action spaces, plus work on sim-to-real transfer for quadrupedal locomotion.
 
-**ML Lab Project** - University of Tübingen  
-Extended simulation-based inference methods with amortized cost estimation using guided diffusion models under Prof. Jakob Macke
+## Things I build
 
-## Academic Service
+- [LazySlurm](https://github.com/RobinU434/LazySlurm) — a terminal UI for monitoring Slurm jobs, the way `htop` works for a machine. Live job overview, log inspection, GPU usage, and remote clusters over a single SSH connection. On PyPI as `lazyslurm-py`.
+- [Tide](https://github.com/RobinU434/Tide) — a PyTorch data engine for sequential and time series datasets
+- [SPARK](https://github.com/RobinU434/SPARK) — non-diagonal Gaussian policies for SAC, grown out of my bachelor thesis
+- [CLIfy](https://github.com/RobinU434/PyArgWriter) and [Config2Class](https://github.com/RobinU434/Config2Class) — developer tooling for generating CLIs and typed configuration classes
+- A hexapod robot I have been rebuilding since 2021, currently running ROS2 with custom proprioceptive sensing and stereo vision
 
-- **Organizer**: Machine Learning Reading Club, Politecnico di Milano (Polimi Data Scientists)
-- **Organizational Staff**: European Workshop on Reinforcement Learning (EWRL 18), Tübingen
+## Toolbox
 
-## Beyond Research
+Python for most things (PyTorch and Lightning, Gymnasium, PettingZoo, Stable-Baselines3, NumPy, Pandas), C++ where it needs to be fast, ROS2 and Moveit for robots, Docker and SLURM for getting experiments to run somewhere other than my laptop.
 
-When not developing probabilistic learning algorithms, I pursue competitive archery (bronze medal at European Championships 2018), long-distance running, and photography. These activities remind me of the importance of patience, precision, and perspective—qualities that translate well into research.
+## Teaching and service
 
----
+- Organiser of the Machine Learning Reading Club at Politecnico di Milano, within Polimi Data Scientists (2025)
+- Volunteer at the European Workshop on Reinforcement Learning (EWRL 18) in Tübingen (2025)
+- Private statistics tutor (2025)
 
-*I'm always interested in discussing research collaborations, particularly projects that combine probabilistic reasoning with decision-making under uncertainty. Feel free to reach out via email or connect on GitHub.*
+## Beyond research
+
+Archery was my sport for years, seriously enough to take a bronze medal at the European Championships in 2018. I have since traded precision for endurance and put the competitive side into road cycling and running instead. Photography is the part I keep entirely uncompetitive.
+
+The full record is on my [CV](/cv/), and I am happy to hear from anyone working on similar problems.
