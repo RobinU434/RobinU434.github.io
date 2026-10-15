@@ -9,15 +9,40 @@ redirect_from:
 
 {% include base_path %}
 
+PDF versions: [short CV]({{ base_path }}/files/cv/CV_Robin_Uhrich.pdf) · [long CV]({{ base_path }}/files/cv/CV_Robin_Uhrich_long.pdf)
+
+<details open>
+  <summary><strong>Short CV</strong></summary>
+  <object data="{{ base_path }}/files/cv/CV_Robin_Uhrich.pdf" type="application/pdf" width="100%" height="800px">
+    <p>Your browser cannot display the PDF inline. <a href="{{ base_path }}/files/cv/CV_Robin_Uhrich.pdf">Download the short CV</a>.</p>
+  </object>
+</details>
+
+<details>
+  <summary><strong>Long CV</strong></summary>
+  <object data="{{ base_path }}/files/cv/CV_Robin_Uhrich_long.pdf" type="application/pdf" width="100%" height="800px">
+    <p>Your browser cannot display the PDF inline. <a href="{{ base_path }}/files/cv/CV_Robin_Uhrich_long.pdf">Download the long CV</a>.</p>
+  </object>
+</details>
+
 Education
 ======
 * M.S. in Machine Learning, University of Tübingen, 2026 (expected)
 * M.S. in Computer Science, Politecnico di Milano, 2025 (Erasmus Exchange, February 2025 - August 2025)
 * B.S. in Computer Science, University of Freiburg, 2023 (October 2019 - September 2023)
 * Aeronautics and Space Engineering, University of Stuttgart, 2019 (October 2018 - September 2019)
+
+Publications
+======
+* Robin Uhrich, Marco Bagatella, Núria Armengol Urpí, Pavel Kolev, Georg Martius. **Occupancy Modeling via Drifting: One-Step Generation Enables Direct Policy Extraction.** Preprint, 2026. [arXiv:2610.19883](https://arxiv.org/abs/2610.19883)
  
 Work Experience
 ======
+* November 2026 - December 2026: Visiting Researcher (upcoming)
+  * University of North Carolina at Chapel Hill
+  * Host: Prof. Weitong Zhang
+  * Research stay on offline reinforcement learning with expressive probabilistic samplers
+
 * October 2025 - March 2026: Student Assistant
   * University of Tübingen, Autonomous Learning Group
   * Supervisor: Prof. Georg Martius, Jens Beißwenger, Anna Manasyan

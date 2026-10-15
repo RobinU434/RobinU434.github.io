@@ -13,15 +13,26 @@ Most of what I have worked on sits somewhere between reinforcement learning, pro
 
 ## Research interests
 
-I am interested in generative modelling for sequential decision making, currently in two directions.
+I want to build learning systems that work the way scientists do: take the record of what a system has done, infer the structure that explains it, and decide which new experiment is worth running. Reinforcement learning is the most general framework I know for this, and probabilistic generative models are the tools I reach for. Most progress in offline RL still means staying close to the data, with behavior foundation models pretrained on reward-free experience and then mostly imitating it. I want to understand what structure these models learn, how to go beyond imitation with it, and how a little online experience can help them most. None of this is specific to robotics: most scientific data is offline too, and a neural circuit or a lab experiment is an environment that cannot be reset.
 
-**Single-step samplers for action spaces.** Most policies still model actions as a diagonal Gaussian. I am looking at what changes when the action distribution comes from a more general single-step generative sampler instead (Drifting, Terminal-Velocity-Matching, ...), and what that buys an online RL algorithm.
+**Discovering structure in behavior foundation models.** Occupancy and forward-backward models learn a compact representation of everything a system can do. When does that representation recover real structure, such as skills, symmetries or controllable factors? How can we test it, and how can structural hypotheses be fed back in as inductive biases for more data-efficient learning?
 
-**Meta-RL from offline data.** Given a fixed dataset and only little knowledge of the downstream task, how much can be learned in advance? Behavior foundation models are what interest me most here. What they actually internalise from offline data, how behavior ends up represented, and how far zero-shot RL can push that: extracting as much as possible from a dataset with respect to any task that might arrive later. Part of the appeal is practical, since probabilistic models that are cheap to sample from and differentiable end to end open up offline and model-based methods that would otherwise be out of reach.
+**Going beyond imitation with uncertainty.** A generative occupancy model can evaluate policies that were never executed in the data, but it is confidently wrong far away from that data. Epistemic uncertainty should mark where this trust ends. One-step generators make the necessary ensembles or posterior samples cheap, and simulation-based inference provides much of the toolkit.
 
-My thesis sits between the two, on occupancy modelling and generative models for offline meta-RL, supervised by Marco Bagatella, Dr. Núria Armengol Urpí and Dr. Pavel Kolev.
+**Offline-to-online as experimental design.** When an agent may collect a little new experience, it should spend it where it best separates its hypotheses about the world, not where things are merely novel. This is the step from imitating data to acting like a scientist, and it is the same problem as choosing the next experiment in a lab.
+
+My master's thesis, supervised by Marco Bagatella, Dr. Núria Armengol Urpí and Dr. Pavel Kolev, is a first step in this direction: a temporal-difference objective for drifting models, one-step generators of discounted state occupancies learned from reward-free data. Because the model is differentiable in a single step, policies can be extracted by backpropagating straight through it, without distilling an auxiliary critic.
+
+## Publications
+
+- **Occupancy Modeling via Drifting: One-Step Generation Enables Direct Policy Extraction**  
+  **Robin Uhrich**, Marco Bagatella, Núria Armengol Urpí, Pavel Kolev, Georg Martius  
+  *Preprint*, 2026. [arXiv:2610.19883](https://arxiv.org/abs/2610.19883)
 
 ## Research experience
+
+**UNC Chapel Hill, group of Prof. Weitong Zhang** (Nov–Dec 2026, upcoming)  
+Research stay on offline reinforcement learning with expressive probabilistic samplers.
 
 **Autonomous Learning Group, University of Tübingen** (2025–2026)  
 Finetuned Vision-Language-Action models for humanoid robots under Prof. Georg Martius and Prof. Wieland Brendel — collecting demonstration data and studying how action representations affect generalisation in behavior cloning.
